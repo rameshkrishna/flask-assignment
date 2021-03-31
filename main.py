@@ -35,7 +35,7 @@ def get_Student(student_id:int,db:Session=Depends(get_db)):
     return student
 
 @app.put("/updateStudent/{student_id}")
-def get_Student(student_id:int,student:StudentRequest,db:Session=Depends(get_db)):
+def update_Student(student_id:int,student:StudentRequest,db:Session=Depends(get_db)):
     studentRecord = db.query(Student).filter(Student.id == student_id).first()
     studentRecord.first_name = student.first_name
     studentRecord.last_name = student.last_name
