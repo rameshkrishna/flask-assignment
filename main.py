@@ -56,11 +56,11 @@ def delete_Student(student_id:int,db:Session=Depends(get_db)):
 @app.post("/addStudent")
 async def add_Student(student:StudentRequest ,db: Session = Depends(get_db)):
     print(student.first_name)
-    st = Student()
-    st.first_name = student.first_name
-    st.last_name = student.last_name
-    st.amount_due = student.amount_due
-    db.add(st)
+    stock = Student()
+    stock.first_name = student.first_name
+    stock.last_name = student.last_name
+    stock.amount_due = student.amount_due
+    db.add(stock)
     db.commit()
     return {
         "code":"hello",
