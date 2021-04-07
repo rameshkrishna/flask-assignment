@@ -1,13 +1,25 @@
-# CRUD Rest API Based on FastAPI 
+# # CRUD Rest API Based on FastAPI and Docker
 
-To Run
+Demo for performing CRUD operations based on FastAPI
 
+## Installation
+
+Python virtual Envronment
+
+```sh
+python3 -m venv env
+source env/bin/activate
 pip install -r requirements.txt
-
 ./run
+```
 
-Check http://127.0.0.1:8000/docs 
+For Docker
 
+```sh
+docker build -t fastapicruddemo .
+docker run -d --name fa4 -p 8000:7070 fastapicruddemo
+```
+### http://127.0.0.1:8000/docs
 
 
 ## Demo Images
