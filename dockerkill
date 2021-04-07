@@ -1,0 +1,2 @@
+docker stop fa4
+docker rm fa4
