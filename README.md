@@ -1,4 +1,4 @@
-# # CRUD Rest API Based on FastAPI and Docker
+# CRUD Rest API Based on FastAPI and Docker
 
 Demo for performing CRUD operations based on FastAPI
 
